@@ -14,6 +14,8 @@ app.get("/number", (req, res) => {
   res.json(data);
 });
 
+let data = { click: 0 };
+
 app.post("/number/increment", (req, res) => {
   data.click += 1;
   res.json(data);
