@@ -13,3 +13,8 @@ app.get("/number", (req, res) => {
   const data = { click: 10 };
   res.json(data);
 });
+
+app.post("/number/increment", (req, res) => {
+  data.click += 1;
+  res.json(data);
+});
