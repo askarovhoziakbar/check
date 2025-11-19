@@ -10,7 +10,7 @@ app.use(express.json());
 app.listen(3000);
 
 app.get("/number", (req, res) => {
-  const data = { click: 0 };
+  const data = { click: 10 };
   res.json(data);
 });
 
