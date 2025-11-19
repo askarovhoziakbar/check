@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import fs from "fs";
 
+const app = express();
+
 app.use(cors());
 app.use(express.json());
 
-const app = express();
 const FILE = "click.json";
 
 if (!fs.existsSync(FILE)) {
