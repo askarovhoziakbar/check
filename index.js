@@ -9,12 +9,11 @@ app.use(express.json());
 
 app.listen(3000);
 
+let data = { click: 0 };
+
 app.get("/number", (req, res) => {
-  const data = { click: 10 };
   res.json(data);
 });
-
-let data = { click: 0 };
 
 app.post("/number/increment", (req, res) => {
   data.click += 1;
