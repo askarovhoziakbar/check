@@ -8,6 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 app.listen(3000);
+
 app.get("/number", (req, res) => {
-  res.status(200).json("сервер работает");
+  const data = JSON.parse(fs.readFileSync(4, "utf-8"));
+  res.json(data);
 });
