@@ -10,6 +10,6 @@ app.use(express.json());
 app.listen(3000);
 
 app.get("/number", (req, res) => {
-  const data = JSON.parse(fs.readFileSync({ click: 0 }, "utf-8"));
+  const data = { click: 10 };
   res.json(data);
 });
